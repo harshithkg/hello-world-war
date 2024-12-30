@@ -6,3 +6,4 @@ fi
 git clone https://github.com/harshithkg/hello-world-war.git
 cd hello-world-war
 mvn clean package
+echo "$name $value"
