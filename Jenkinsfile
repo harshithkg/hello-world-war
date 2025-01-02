@@ -29,7 +29,6 @@ post {
         mail to: "harshithkgph27@gmail.com",
              subject: "Jenkins Job Failed",
              body: "The Jenkins job failed. Check the logs for details."
-    }
-      
+    }   
 }
 }
