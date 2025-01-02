@@ -3,8 +3,8 @@ pipeline {
     stages {
         stage('checkout') {
             steps {
-               // sh 'rm -rf hello-world-war'
-                sh 'git clone https://github.com/shrikantashetty/hello-world-war.git'
+                sh 'rm -rf hello-world-war'
+                sh 'git clone https://github.com/harshithkg/hello-world-war.git'
             }
         } 
        stage('build') {
