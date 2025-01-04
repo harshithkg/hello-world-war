@@ -12,11 +12,9 @@ pipeline {
     stages {
         stage('Checkout Code') {
             steps {
-                script {
-                pipeline.checkoutscm()
+                checkout scm
                 }
             }
-        }
 
         stage('Set up Java 17') {
             steps {
