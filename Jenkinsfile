@@ -1,7 +1,7 @@
 @Library('my-shared-library@main') _  // Correct syntax
 
 pipeline {
-    agent any
+    agent { label 'slave-2' }
 
     environment {
         JAVA_HOME = '/usr/lib/jvm/java-17-openjdk-amd64'
@@ -12,10 +12,11 @@ pipeline {
     stages {
         stage('Checkout Code') {
             steps {
-                checkout scm
+        	script {
+			pipeline.checkoutscm()
                 }
             }
-
+	}
         stage('Set up Java 17') {
             steps {
                 script {
