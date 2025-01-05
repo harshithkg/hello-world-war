@@ -62,6 +62,7 @@ pipeline {
 				}
 			}
         }
+	    /*
         stage('wait') {
 			steps {
 				script {
@@ -69,6 +70,7 @@ pipeline {
 				}
 			}
         }
+	*/
         stage('stoping') {
 			steps {
 				script {
