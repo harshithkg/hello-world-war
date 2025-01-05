@@ -41,12 +41,12 @@ pipeline {
             }
         }
 
-       /* stage('Upload Artifact') {
+       stage('Upload Artifact') {
             steps {
-                uploadArtifact('target/bus-booking-app-1.0-SNAPSHOT.jar')
+                uploadArtifact('target/hello-world-war-1.0.0.war')
             }
         }
-*/
+	    
         stage('Run Application') {
             steps {
                 script {
