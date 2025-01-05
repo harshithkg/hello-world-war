@@ -1,5 +1,5 @@
 pipeline {
-    agent any
+    agent { label 'slave-2' }
     //tools {
      //   maven 'Maven-3.4.0' // Specify your Maven version if using Maven
      //   jdk 'JDK11'         // Specify your JDK version
@@ -13,7 +13,7 @@ pipeline {
         stage('checkout') {             
             steps {
                 sh 'rm -rf hello-world-war'
-                sh 'git clone https://github.com/AkshathaMR/hello-world-war/'
+                sh 'git clone https://github.com/shubhalokesh/hello-world-war/'
             }
         }
          stage('build') { 
@@ -39,8 +39,8 @@ pipeline {
                 withSonarQubeEnv('SonarCloud') {
                     sh '''
                     mvn sonar:sonar \
-                      -Dsonar.projectKey=akshatha111_project1 \
-                      -Dsonar.organization=akshatha111 \
+                      -Dsonar.projectKey=shubhalokesh_hello-world-war \
+                      -Dsonar.organization=shubha123 \
                       -Dsonar.host.url=https://sonarcloud.io \
                       -Dsonar.login=$SONAR_TOKEN
                     '''
