@@ -13,7 +13,7 @@ pipeline {
         stage('checkout') {             
             steps {
                 sh 'rm -rf hello-world-war'
-                sh 'git clone https://github.com/harshithkg/hello-world-war.git
+                sh 'git clone https://github.com/harshithkg/hello-world-war.git'
             }
         }
          stage('build') { 
