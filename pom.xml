@@ -7,13 +7,15 @@
 	<packaging>war</packaging>
 	<name>Hello World Web Application Repository</name>
 	<description>Simplest possible Java Webapp</description>
+
 	<distributionManagement>
     		<snapshotRepository>
         		<id>snapshots</id>
-        			<name>a0tng3n5mohgw-artifactory-primary-0-snapshots</name>
-        			<url>https://trial90xb22.jfrog.io/artifactory/hello-world-libs-snapshot-local</url>
-    			</snapshotRepository>
+        		<name>a0tng3n5mohgw-artifactory-primary-0-snapshots</name>
+        		<url>https://trial90xb22.jfrog.io/artifactory/hello-world-libs-snapshot-local</url>
+    		</snapshotRepository>
 	</distributionManagement>
+
 	<build>
 		<plugins>
 			<plugin>
