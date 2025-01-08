@@ -3,18 +3,18 @@
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>com.efsavage</groupId>
 	<artifactId>hello-world</artifactId>
-	<version>1.0.1</version>
+	<version>1.0.${env.GITHUB_RUN_NUMBER}</version>
 	<packaging>war</packaging>
-	<name>Hello World Web Application Repository</name>
-	<description>Simplest possible Java Webapp</description>
-
 	<distributionManagement>
-    		<snapshotRepository>
-        		<id>snapshots</id>
-        		<name>a0tng3n5mohgw-artifactory-primary-0-snapshots</name>
-        		<url>https://trial90xb22.jfrog.io/artifactory/hello-world-libs-snapshot-local</url>
-    		</snapshotRepository>
+    		<repository>
+        		<id>central</id>
+        		<name>a0tng3n5mohgw-artifactory-primary-0-releases</name>
+        		<url>https://trial90xb22.jfrog.io/artifactory/hello-world-libs-release</url>
+    		</repository>
 	</distributionManagement>
+	
+        <name>Hello World Web Application Repository</name>
+	<description>Simplest possible Java Webapp</description>
 
 	<build>
 		<plugins>
@@ -31,6 +31,7 @@
 				<artifactId>maven-war-plugin</artifactId>
 				<version>3.4.0</version>
 			</plugin>
+			
 		</plugins>
 	</build>
 
