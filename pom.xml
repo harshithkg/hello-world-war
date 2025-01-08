@@ -3,17 +3,17 @@
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>com.efsavage</groupId>
 	<artifactId>hello-world-war</artifactId>
-	<version>1.0.${env.GITHUB_RUN_NUMBER}</version>
+	<version>1.0.1</version>
 	<packaging>war</packaging>
 	<name>Hello World Web Application Repository</name>
 	<description>Simplest possible Java Webapp</description>
 	<distributionManagement>
-    		<repository>
-        		<id>central</id>
-        		<name>a0fby4eohzvuk-artifactory-primary-0-releases</name>
-       			<url>https://triale9fiyg.jfrog.io/artifactory/hello_world_war1-libs-release</url>
-    		</repository>
-    	</distributionManagement>
+    		<snapshotRepository>
+        		<id>snapshots</id>
+        		<name>a0fby4eohzvuk-artifactory-primary-0-snapshots</name>
+        		<url>https://triale9fiyg.jfrog.io/artifactory/hello_world_war1-libs-snapshot</url>
+    		</snapshotRepository>
+	</distributionManagement>
 	<build>
 		<plugins>
 			<plugin>
