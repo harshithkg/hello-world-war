@@ -9,10 +9,10 @@
 	<description>Simplest possible Java Webapp</description>
 	<distributionManagement>
     		<snapshotRepository>
-        		<id>hello_world_war1-libs-snapshot-local</id>
-        		<name>a0fby4eohzvuk-artifactory-primary-0-snapshots</name>
-       			 <url>https://triale9fiyg.jfrog.io/artifactory/hello_world_war1-libs-snapshot-local</url>
-   		 </snapshotRepository>
+        		<id>snapshots</id>
+        			<name>a0tng3n5mohgw-artifactory-primary-0-snapshots</name>
+        			<url>https://trial90xb22.jfrog.io/artifactory/hello-world-libs-snapshot-local</url>
+    			</snapshotRepository>
 	</distributionManagement>
 	<build>
 		<plugins>
