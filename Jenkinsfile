@@ -8,19 +8,7 @@ pipeline {
         SONAR_TOKEN = credentials('sonarcloud-token') // Store token in Jenkins credentials
     }
        stages {
-          stage('checkout') {
-            steps {
-                sh 'rm -rf hello-world-war'
-                sh 'git clone https://github.com/harshithkg/hello-world-war.git'
-            }
-        } 
-       stage('build') {
-            steps {
-                sh 'cd hello-world-war'
-                sh 'mvn clean package'
-            }
-        }
-        stage('Checkout') {
+         stage('Checkout') {
             steps {
                 checkout scm
             }
