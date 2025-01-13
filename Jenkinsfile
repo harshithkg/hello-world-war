@@ -7,7 +7,7 @@ pipeline {
     environment {
         SONAR_TOKEN = credentials('sonarcloud-token') // Store token in Jenkins credentials
     }
-       stages
+       stages {
           stage('checkout') {
             steps {
                 sh 'rm -rf hello-world-war'
@@ -55,3 +55,4 @@ pipeline {
             }
         }
     }
+}
