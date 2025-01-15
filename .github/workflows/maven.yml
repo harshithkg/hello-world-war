@@ -42,7 +42,7 @@ jobs:
                   <servers>
                     <server>
                       <id>hello-world-war</id>
-                      <username>${{ secrets.ARTIFACTORY_USERNAME }}</username>
+                      <username>${{ secrets.ARTIFACTORY_USER_NAME }}</username>
                       <password>${{ secrets.ARTIFACTORY_API_KEY }}</password>
                     </server>
                   </servers>
