@@ -9,9 +9,9 @@
 	<description>Simplest possible Java Webapp</description>
 <distributionManagement>
     <repository>
-        <id>central</id>
+        <id>hello-world-war</id>
         <name>ip-172-31-40-99-releases</name>
-        <url>http://13.201.96.46:8081/artifactory/hello-world-war-libs-release</url>
+        <url>http:http://13.201.96.46:8082/artifactory/hello-world-war-libs-release/</url>
     </repository>
 </distributionManagement>
 	<build>
