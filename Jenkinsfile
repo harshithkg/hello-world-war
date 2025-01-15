@@ -1,7 +1,7 @@
 pipeline {
     agent any
     environment {
-       Sample_creds = credentials('Demo_test_crd')
+       Sample_creds = credentials('JFROG')
     }
        stages 
     {
@@ -13,7 +13,7 @@ pipeline {
                 sudo su
                 cd /opt/apache-tomcat-10.1.34/webapps
                 ls
-                curl -L -u "JFROG_USR:JFROG_TOKEN" -O "http://13.203.76.219:8082/artifactory/hello_world_war-libs-release/com/efsavage/hello-world-war/1.0.14/hello-world-war-1.0.14.war"
+                curl -L -u "JFROG_USR:JFROG_PWD" -O "http://13.201.96.46:8082/artifactory/hello-world-war-libs-release/com/efsavage/hello-world-war/1.0.35/hello-world-war-1.0.35.war"
                 pwd
                 cd /opt/apache-tomcat-10.1.34/bin
                 ./shutdown.sh
