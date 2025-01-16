@@ -12,8 +12,7 @@ pipeline {
                 sleep 5
                 sudo su
                 cd /opt/apache-tomcat-10.1.34/webapps
-                ls
-                curl -L -u "JFROG_USR:JFROG_PWD" -O "http://13.201.96.46:8082/artifactory/hello-world-war-libs-release/com/efsavage/hello-world-war/1.0.35/hello-world-war-1.0.35.war"
+                curl -L -u "JFROG_USR:JFROG_PWD" -O "http://3.110.127.190:8082/artifactory/hello-world-war-libs-release/com/efsavage/hello-world-war/1.0.36/hello-world-war-1.0.36.war"
                 pwd
                 cd /opt/apache-tomcat-10.1.34/bin
                 ./shutdown.sh
